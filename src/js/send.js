@@ -3,7 +3,7 @@
   form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const fields = form.querySelectorAll('input[type="text"], textarea');
+    const fields = form.querySelectorAll('input[type="text"], input[type="email"], textarea');
 
     fields.forEach((field) => {
       if (field.value.trim() === "") {
